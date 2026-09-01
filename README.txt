@@ -1,0 +1,1 @@
+Version 2 du site Pinocchio Gelato. Ouvrir index.html dans un navigateur.
