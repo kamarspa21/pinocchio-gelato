@@ -7,3 +7,22 @@
 .menu-card{max-width:920px;margin:0 auto;border:1px solid rgba(200,166,106,.55);padding:12px;background:#090909;box-shadow:0 20px 70px rgba(0,0,0,.35)}
 .menu-card img{display:block;width:100%;height:auto}
 @media(max-width:800px){.menu-section{padding:80px 5vw}.menu-card{padding:6px}}
+
+/* ===== Section Avis clients ===== */
+.reviews-section{position:relative;overflow:hidden;padding:115px 6vw;background:linear-gradient(180deg,#f7f1e8 0%,#efe4d6 100%)}
+.reviews-section:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 8% 18%,rgba(200,166,106,.14),transparent 28%),radial-gradient(circle at 92% 82%,rgba(117,82,52,.10),transparent 30%);pointer-events:none}
+.reviews-head{position:relative;text-align:center;max-width:980px;margin:0 auto 48px}
+.reviews-head .eyebrow{margin-bottom:18px}
+.reviews-head h2{font-size:clamp(48px,6vw,78px);line-height:.92}
+.reviews-head>p:last-child{max-width:650px;margin:24px auto 0;color:var(--muted);font-size:13px;line-height:1.8}
+.reviews-wrap{position:relative;max-width:1320px;margin:0 auto}
+.reviews-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 40px)/3);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:8px 4px 18px}
+.reviews-track::-webkit-scrollbar{display:none}
+.review-card{scroll-snap-align:start;background:rgba(255,253,249,.92);border:1px solid rgba(99,71,47,.12);border-radius:20px;padding:16px;box-shadow:0 18px 45px rgba(57,38,25,.10);display:flex;align-items:center;justify-content:center;min-height:330px}
+.review-card img{display:block;width:100%;height:auto;max-height:470px;object-fit:contain;border-radius:10px}
+.review-arrow{position:absolute;z-index:3;top:50%;transform:translateY(-50%);width:46px;height:46px;border:1px solid rgba(99,71,47,.2);border-radius:50%;background:#fffdf9;color:#6f4c31;font-size:30px;line-height:1;cursor:pointer;box-shadow:0 8px 25px rgba(57,38,25,.12)}
+.review-prev{left:-23px}.review-next{right:-23px}
+.review-dots{display:flex;justify-content:center;gap:9px;margin-top:22px}
+.review-dots span{width:8px;height:8px;border-radius:50%;border:1px solid #b48a5b;display:block;cursor:pointer}
+.review-dots span.active{background:#9b6939}
+@media(max-width:800px){.reviews-section{padding:80px 5vw}.reviews-head{margin-bottom:30px}.reviews-track{grid-auto-columns:100%;gap:14px;padding-left:0;padding-right:0}.review-card{min-height:0;padding:10px;border-radius:16px}.review-card img{max-height:560px}.review-arrow{width:40px;height:40px;font-size:26px}.review-prev{left:8px}.review-next{right:8px}}
