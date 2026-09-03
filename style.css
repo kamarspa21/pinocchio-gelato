@@ -299,3 +299,121 @@ body.modal-open{overflow:hidden}
   .hot-drinks-grid .perfume-category-overlay{height:330px}
   .hot-drinks-grid .perfume-category-title{font-size:40px}
 }
+
+
+/* --- Mise à jour : catégories Nos parfums sans images --- */
+.perfume-categories .perfume-category {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #d9c7ad;
+  border: 1px solid rgba(92, 65, 42, .45);
+  border-radius: 18px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.perfume-categories .perfume-category::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+.perfume-categories .perfume-category-title {
+  position: relative;
+  z-index: 2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.15;
+  color: #fff;
+}
+
+.perfume-categories .perfume-category:hover {
+  transform: translateY(-3px);
+}
+
+.perfume-categories .perfume-category-arrow,
+.perfume-categories .perfume-category-image,
+.perfume-categories .perfume-category-overlay,
+.perfume-categories .perfume-category-pattern {
+  display: none !important;
+}
+
+.perfume-categories .perfume-category-text {
+  background: linear-gradient(145deg, #6d4b34, #cbb18c);
+}
+
+
+/* --- Style typographique centré des catégories Nos parfums --- */
+.perfume-categories .perfume-category {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.perfume-categories .perfume-category-title {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Cormorant Garamond", "Baskerville", "Times New Roman", serif;
+  font-size: clamp(2.35rem, 4vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.18);
+}
+
+.perfume-categories .perfume-category-text .perfume-category-title {
+  font-style: italic;
+}
+
+
+/* === CORRECTION FINALE : titres parfaitement centrés === */
+.perfume-categories .perfume-category {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+.perfume-categories .perfume-category .perfume-category-title {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding: 0 24px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  align-self: auto !important;
+  font-family: "Cormorant Garamond", "Baskerville", "Times New Roman", serif !important;
+  font-size: clamp(2.2rem, 3.4vw, 3.15rem) !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  line-height: 1.05 !important;
+  letter-spacing: .01em !important;
+  color: #fff !important;
+}
+
+.perfume-categories .perfume-category-text .perfume-category-title {
+  font-style: normal !important;
+}
